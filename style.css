@@ -21,3 +21,29 @@ body p {
 body button {
     border-radius: 50;
 }
+
+.links {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.links .index {
+    background-color: chocolate;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.links .download {
+    background-color: chocolate;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.links .marketplace {
+    background-color: chocolate;
+    text-align: center;
+    border-radius: 10px;
+}
+
