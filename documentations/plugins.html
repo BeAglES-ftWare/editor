@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Beagle Editor Documentation - Plugins</title>
+</head>
+<body>
+    <h1>Beagle Editor Documentation</h1>
+    <div class="links">
+        <div class="index">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="download">
+            <a href="../download.html">Downloads</a>
+        </div>
+        <div class="screenshots">
+            <a href="../screenshots.html">Screenshots</a>
+        </div>
+        <div class="marketplace">
+            <a href="../marketplace.html">Plugins Marketplace</a>
+        </div>
+        <div class="docu">
+            <a href="../docu.html">Documentation</a>
+        </div>
+        <div class="changelog">
+            <a href="../changelog.html">Changelog</a>
+        </div>
+    </div>
+    <h2>BeagleEditor Plugins</h2>
+    <p>Plugins are very good, because they can extend BeagleEditor features.<br>
+
+    There is a Git integration for BeagleEditor, a terminal and so many features<br>
+
+    Even you can write a plugin and open a pull request. <br>
+
+    Plugins can turn a minimal editor to a perfect editor<br>
+
+    You can download plugins from <a href="https://github.com/MaArasteh/beagleeditor-plugins/releases">here</a>
+    </p>
+    <h3>Adding Plugins</h3>
+    <p>
+    First, download plugins from BeagleEditor Plugins GitHub repository (You can clone it with Git, going to Code > Download ZIP or select the plugin you want)<br>
+
+    Then, put it in a folder named "plugins" in BeagleEditor destination<br>
+
+    Open BeagleEditor, then you see the plugin/plugins added to Plugins menu in editor (If you don't put plugins, Plugins menu will be empty)<br>
+
+    <h3>How to write plugins</h3>
+    You can fork this repository or create repository yourself<br>
+
+    Create a Python file<br>
+
+    Write the plugin<br>
+
+    Then put a function in your code to run plugin from beagleeditor with name: run_from_beagleeditor() like the example:<br>
+
+    <code>def run_from_beagleeditor():</code><br>
+    <code>    print("Test of a plugin for BeagleEditor")</code><br>
+    or
+
+    <code>class BeagleEditorPluginExample():</code><br>
+    <code>    def __init__(self):</code><br>
+    <code>        print("Test of a plugin for BeagleEditor")</code><br>
+    <code></code><br>
+    <code>def run_from_beagleeditor():</code><br>
+    <code>    example = BeagleEditorPluginExample()</code><br>
+    <code>    example() # I'm not sure this is correct</code><br>
+    or even<br>
+
+    <code>import random</code><br>
+    <code></code><br>
+    <code>def test(num):</code><br>
+    <code>    print(f"Number is {num}")</code><br>
+    <code></code>
+    <code>def run_from_beagleeditor():</code><br>
+    <code>    test(10)</code><br>
+    Note: If you are writing GUI plugin, you can't use PyQt6 because it may cause "QtCoreApplication::exec: The event loop is already running" error (An alternative is Tkinter)<br>
+
+    Then test it by putting the file into "plugins" folder.<br>
+
+    Even, you can open a pull request<br>
+    </p>
+</body>
+</html>

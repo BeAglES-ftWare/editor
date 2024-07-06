@@ -34,7 +34,7 @@ body a {
 .links {
     display: grid;
     align-items: center; 
-    grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     column-gap: 5px;
 }
 
@@ -62,29 +62,55 @@ body a {
     border-radius: 10px;
 }
 
+.links .docu {
+    background-color: #d6d6d6;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.links .changelog {
+    background-color: #d6d6d6;
+    text-align: center;
+    border-radius: 10px;
+}
+
 .links .index:hover {
-    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
+    background: linear-gradient(45deg, blue ,red, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
     background-size: 200% 200%;
     transition: background 2.0s ease;
     background-position: 100% 100%;
 }
 
 .links .download:hover {
-    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
+    background: linear-gradient(45deg, blue ,red, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
     background-size: 200% 200%;
     transition: background 2.0s ease;
     background-position: 100% 100%;
 }
 
 .links .screenshots:hover {
-    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
+    background: linear-gradient(45deg, blue ,red, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
     background-size: 200% 200%;
     transition: background 2.0s ease;
     background-position: 100% 100%;
 }
 
 .links .marketplace:hover {
-    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
+    background: linear-gradient(45deg, blue ,red, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
+    background-size: 200% 200%;
+    transition: background 2.0s ease;
+    background-position: 100% 100%;
+}
+
+.links .docu:hover {
+    background: linear-gradient(45deg, blue ,red, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
+    background-size: 200% 200%;
+    transition: background 2.0s ease;
+    background-position: 100% 100%;
+}
+
+.links .changelog:hover {
+    background: linear-gradient(45deg, blue ,red, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white, #ff00ff, #debade, #dbc3db, #f0edf0, #e6d8e6, white);
     background-size: 200% 200%;
     transition: background 2.0s ease;
     background-position: 100% 100%;
